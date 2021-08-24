@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CovINfo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="images/covid logo.png" alt="avatar" class="avatar" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                CovINfo
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#infection rate" class="nav-link">Live updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vaccine.html" target="_blank" class="nav-link">Vaccination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">Safety Measures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.who.int/news-room/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---physical-activity?gclid=EAIaIQobChMIt4OtmY268gIVe5NmAh2_vgSaEAAYASAAEgJ-7PD_BwE" target="_blank" class="nav-link">Exercise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.who.int/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---healthy-diet?gclid=EAIaIQobChMIyLvShIy68gIVg5lmAh2zEwLLEAAYASAAEgIeBfD_BwE" target="_blank" class="nav-link">Diet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about us.html" target="_blank" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact us.html" target="_blank" class="nav-link">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--show case-->
+    <section class="bg-light text-danger p-5 text-center text-sm-start  ">
+        <div class="container1">
+            <div class="d-sm-flex align-items-center justify-content-between">
+
+                <div>
+                    <h4>COVID-19 <span class="text-primary"> Alert</span></h4>
+                    <h2>
+                        <span class="span text-secondary"> Stay at Home quarantine To stop Corona virus</span>
+                    </h2>
+                    <p class="lead my-4 text-warning">
+                        There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may
+                        need supportive care to .
+                    </p>
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Let us help
+                    </button>
+                </div>
+                <img class="img-fluid center w-50 d-sm-block" src="images/covid 1.png" alt="">
+
+    
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>  
+
+    
+     <!--live updates-->
+     <!--coviddata -->
+     <section id="infection rate"></section>
+     <h1 style="text-align: center;background-color:font-family: 'Shadows Into Light', cursive;" class="text-secondary">INFECTION RATE IN INDIA</h1>
+   
+     <br>
+ 
+     <article style="float:left;">
+         <img src="images/coronamap.png" style="height: 500px;width:550px;">
+     </article>
+     <br>
+
+         <div class="container21"  style="width: 1250px;">
+     <article style="margin-left: 40%;" > 
+                                  <h1 style="font-family: 'Shadows Into Light', cursive; ">COVID -19 Cases in <span id="country"></span> <img src="" id="flag"></h2>
+       <div class="dashboard">
+         <div class="card a"><i class="fa fa-tachometer"></i><h5>Active Cases</h5><span id="active"></span></div>
+         <div class="card ca"><i class="fa fa-th-list"></i><h5>Total Cases</h5><span id="cases"></span></div>
+         <div class="card cr"><i class="fa fa-times-circle"></i><h5>Critical Cases</h5><span id="critical"></span></div>
+         <div class="card d"><i class="fa fa-times"></i><h5>Total Deaths</h5><span id="death"></span></div>
+         <div class="card r"><i class="fa fa-check-square-o"></i><h5>Recovered Cases</h5><span id="recovered"></span></div>
+         <div class="card t"><i class="fa fa-eye"></i><h5>Total Testes Done</h5><span id="tests"></span></div>
+       </div>
+     </div> 
+    </article>
+    </section>  
+    <hr>
+    <hr>
+    
+
+    <!--intro-->
+    <section id="intro" class="p-5">
+        <div class="container3">
+            <div class="d-sm-flex justify-contents-between align-items-center">
+                <div class="co-md p-5">
+                    <img src="images/covid.png" class="img-fluid" alt="">
+                </div>
+                <div class="co-md p-5">
+                    <h4 class="bold"><span class="text-danger">What is covid-19</span></h4>
+                    <h2 class="bold text-secondary">Coronavirus</h2>
+                    <p class="lead text-warning fw-light">
+                        Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. 
+
+                
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container4">
+            <h4 style="text-align: center;">
+                <span class="text-danger">Covid-19</span>
+            </h4>
+            <h2 style="text-align: center;">
+                <span class="text-secondary">Contamination</span>
+            </h2>
+            <p class="text-center text-warning fw-light">
+            
+
+                    Whether or not they have symptoms, infected people can be contagious and the virus can spread from them to other people.
+
+            Laboratory data suggests that infected people appear to be most infectious just before they develop symptoms (namely 2 days before they develop symptoms) and early in their illness. People who develop severe disease can be infectious for longer.
+            
+            While someone who never develops symptoms can pass the virus to others, it is still not clear how frequently this occurs and more research is needed in this area.
+
+            
+            
+            
+            
+            </p>
+            <br>
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-light text-dark h-100">
+                        <img src="images/air transmission.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-success">
+                                Air Transmission
+                            </h3>
+                            <p class="card-text text-primary fw-light">
+
+                                Fomites are surfaces where the virus lands. Touching them and later touching your nose or mouth increases the chances of inhaling the virus into the body. When a person coughs, sneezes, talks loudly, etc, droplets of saliva containing the virus are spread through the air.
+
+            
+                            </p>
+                            <a href="https://www.epa.gov/coronavirus/indoor-air-and-coronavirus-covid-19" target="_blank" class="btn btn-dark">Read More </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark h-100">
+                        <img src="images/human contacts.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-success">
+                                Human Contact
+                            </h3>
+                            <p class="card-text text-primary fw-light">
+                                
+                                The virus is transmitted through direct contact with respiratory droplets of an infected person (generated through coughing and sneezing). Individuals can also be infected from and touching surfaces contaminated with the virus and touching their face (e.g., eyes, nose, mouth).
+                            </p>
+                            <a href="https://www.webmd.com/lung/coronavirus-transmission-overview#1" target="_blank" class="btn btn-dark">Read More </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark h-100">
+                        <img src="images/containted objects.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-success">
+                                Contaminated Objects
+                            </h3>
+                            <p class="card-text text-primary fw-light">
+                                People may also become infected by touching surfaces that have been contaminated by the virus when touching their eyes, nose or mouth without cleaning their hands.
+
+                                  Further research is ongoing to better understand the spread of the virus and which settings are most risky and why.
+                            </p>
+                            <a href="https://www.cdc.gov/coronavirus/2019-ncov/more/science-and-research/surface-transmission.html" target="_blank" class="btn btn-dark">Read More </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--symptoms-->
+    <section id="Learn" class="p-5">
+        <div class="container5">
+            <h4 style="text-align: center;">
+                <span class="text-danger">Covid-19</span>
+            </h4>
+            <h2 style="text-align: center;">
+                <span class="text-secondary">Symptoms</span>
+            </h2>
+            <p class="text-center text-warning fw-light">
+                Signs and symptoms include respiratory symptoms and include fever, cough and shortness of breath. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome and sometimes Fever or chills. A dry cough and shortness of breath,
+                Feeling very tired,
+                Muscle or body aches,
+                Headache,
+                A loss of taste or smell,
+                Sore throat,
+                Congestion or runny nose,
+                Nausea or vomiting,
+                Diarrhea.
+                These symptoms can start anywhere from 2 to 14 days after you’re in contact with the virus.
+        
+        
+            </p>
+            <div class="container">
+                <div class="col-md">
+                    <img src="images/symptomps.png" class="center img-fluid w-100 h-auto" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+    <!--sections-->
+    <section id="learn" class="p-5">
+        <div class="container6">
+            <h4 style="text-align: center;">
+                <span class="text-danger">Covid-19</span>
+            </h4>
+            <h2 style="text-align: center;">
+                <span class="text-secondary">What Should We Do</span>
+            </h2>
+            <p class="text-center text-warning fw-light">
+                To prevent the deadly covid19 virus, some basic precautions are needed to be followed with care.Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.
+            
+            </p>
+
+            <p class="text-center text-warning">
+                
+                
+                <h3 class="text-center text-success fst-italic">Stopping the spread starts with you</h3>        
+            </p>
+            <div class="container7">
+                <div class="d-sm-flex justify-contents-between align-items-center">
+                    <div class="co-md p-5">
+                        <h2 class="bold">1. Wear masks</h2>
+                        <p class="lead text-info">
+                            Masks can help prevent the spread of the virus from the<br>
+                            person wearing the mask to others. Masks alone do not<br>
+                            protect against COVID-19, and should be combined with physical<br>
+                            distancing and hand hygiene. Follow the advice provided by your<br>
+                            local health authority.
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <img src="images/masks.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+    <section id="learn" class="p-5">
+        <div class="container6">
+            <div class="d-sm-flex justify-contents-between align-items-center">
+                <div class="col-md">
+                    <img src="images/wash hands.png" class="img-fluid" alt="">
+                </div>
+                <div class="co-md p-5">
+                    <h2 class="bold">2. Wash Your Hands</h2>
+                    <p class="lead text-info">
+                        Handwashing has always been one of most effective ways of keeping<br>
+                        diseases at bay. It is a simple act that pays in dividends when it comes<br>
+                        to keeping ourselves healthy and safe. Handwashing is also one of the key<br>
+                        cornerstones of COVID-19 prevention. Now more than ever as we embrace<br>
+                        the new normal and live with COVID-19, hand hygiene needs to become an <br>
+                        integral part of our daily routine and our lives, as we live through this <br>
+                        pandemic, and beyond, to protect us from diseases.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="learn" class="p-5">
+        <div class="container5">
+            <div class="d-sm-flex justify-contents-between align-items-center">
+                <div class="co-md p-5">
+                    <h2 class="bold">3. Use Nose-Rag</h2>
+                    <p class="lead text-info">
+                        They are disposable alternatives for cloth handkerchiefs. <br>
+                        The terms are commonly used to refer to the type of paper tissue,<br>
+                        usually sold in boxes, that is designed to facilitate the expulsion<br>
+                        of nasal mucus from the nose (nose-blowing) although it may refer to<br>
+                        other types of facial tissues including napkins and wipes.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="images/tissue paper.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="learn" class="p-5">
+        <div class="container4">
+            <div class="d-sm-flex justify-contents-between align-items-center">
+                <div class="col-md">
+                    <img src="images/human contacts.png" class="img-fluid" alt="">
+                </div>
+                <div class="co-md p-5">
+                    <h2 class="bold">4. Avoid Contacts</h2>
+                    <p class="lead text-info">
+                        Wash your hands often with soap and water for at least <br>
+                        20 seconds. Use an alcohol-based hand sanitizer that contains<br>
+                        at least 60% alcohol if soap and water are not available.<br>
+                        Avoid touching your eyes, nose, and mouth with unwashed hands.<br>
+                        Avoid close contact with people who are sick.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--covid related videos-->
+    <div class="container-fluid">
+        <div class="text-center">
+            <div class="co-md p-5">
+                <h2 class="bold"><span class="text-danger">Related Videos</span></h2>
+            </div>
+         <div class="col-center">
+            <div class="col-md-rigth">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/e9DoZXhregI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <br>
+            <div class="col-md-left">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/_JB8IEPqd1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            
+         </div>
+        </div>
+    </div>
+
+    <!--News letter-->
+    <section class="bg-light text-light p-5">
+        <div class="comtainer3">
+            <div class="d-md-flex text-success justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Have Question in mind?<br>Let Us help you</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter your Email" />
+                    <button class="btn btn-danger btn-lg" type="button" id="button-addon2">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <footer class="p-5 bg-dark text-white position-relative ">
+        <div class="container">
+         <a href="#" class="navbar-brand text-white">
+             <img src="images/covid logo.png" alt="avatar" class="avatar" width="30" height="30"
+                 class="d-inline-block align-text-top">
+             Covid-19
+         </a>
+          
+           <p class="lead fs-6 text-center text-info">Copyright &copy; 2021 CovINfo</p>
+           <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+              <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+       </div>
+     </footer>
+
+     <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="enroll">Let us Help</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Fill out this form and we will get back to you</p>
+              <form>
+                  <div class="mb-3">
+                      <label for="first-name" class="col-form-label">
+                          First Name:
+                      </label>
+                      <input type="text" class="form-control" id="first-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="last-name" class="col-form-label">
+                        Last Name:
+                    </label>
+                    <input type="text" class="form-control" id="last-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="col-form-label">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="col-form-label">
+                        phone:
+                    </label>
+                    <input type="text" class="form-control" id="phone">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            fetch('https://corona.lmao.ninja/v2/countries/India')
+           .then((response) => {
+             return response.json();
+           })
+           .then((data) => {
+             console.log(data);
+             document.getElementById("country").innerHTML = data.country;
+             document.getElementById("active").innerHTML = data.active.toLocaleString();
+             document.getElementById("cases").innerHTML = data.cases.toLocaleString();
+             document.getElementById("critical").innerHTML = data.critical.toLocaleString();
+             document.getElementById("death").innerHTML = data.deaths.toLocaleString();
+             document.getElementById("recovered").innerHTML = data.recovered.toLocaleString();
+             document.getElementById("tests").innerHTML = data.tests.toLocaleString();
+             document.getElementById("flag").src = data.countryInfo.flag;
+           });
+           </script>
+
+</body>
+
+</html>

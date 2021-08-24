@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="icofont/icofont.min.css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+</head>
+<style type="text/css">
+  body{
+      background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(234 , 249,251,0.63) 0.1%, rgba(239,249,251,0.63) 90.1%);
+  }
+</style>
+<body>
+   
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="images/covid logo.png" alt="avatar" class="avatar" width="30" height="30"
+                class="d-inline-block align-text-top">
+            CovINfo
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" target="_blank" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="vaccine.html" target="_blank" class="nav-link">Vaccination</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.who.int/news-room/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---physical-activity?gclid=EAIaIQobChMIt4OtmY268gIVe5NmAh2_vgSaEAAYASAAEgJ-7PD_BwE" target="_blank" class="nav-link">Exercise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.who.int/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---healthy-diet?gclid=EAIaIQobChMIyLvShIy68gIVg5lmAh2zEwLLEAAYASAAEgIeBfD_BwE" target="_blank" class="nav-link">Diet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about us.html" target="_blank" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact us.html" class="nav-link">Contact us</a>
+              </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  <section class="mb-4">
+      <h2 class="h1-responsive font-weight-bold text-center my-5">Contact Us</h2>
+      <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+      <div class="row">
+          <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contactform">
+
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" name="name" class="form-control">
+                              <label for="name">Your Name</label>
+                          </div>
+                          
+                      </div>
+
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" name="email" class="form-control">
+                              <label for="email">Your Email</label>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <input type="text" name="subject" class="form-control">
+                              <label for="subject">Subject</label>
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form">
+                              <textarea type="text" name="message" rows="3" class="form-control md-textarea"></textarea>
+                              <label for="message">Your Message</label>
+                              
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+
+                  <div class="text-center text-md-left">
+                      <button class="btn btn-primary" type="submit">Send</button>
+                      
+                  </div>
+                  
+              </form>
+              
+          </div>
+
+          <div class="col-md-3 text-center text-primary">
+              <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                      <p class="text-dark">Griet, Nizampet, TS</p></li>
+
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                      <p class="text-dark">+(91)-9014534883</p></li>
+
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                      <p class="text-dark">aacgriet.org@gmail.com</p></li>
+                  
+              </ul>
+              
+          </div>
+          
+      </div>
+  </section>
+  
+</div>
+
+
+
+    <!--FAQs-->
+
+    <section id="Questions" class="p-5">
+      <div class="comtainer">
+          <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+          <div class="accordion accordion-flush" id="questions">
+              <!--item 1-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                  Are you official?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                <div class="accordion-body">
+                    No
+                </div>
+              </div>
+            </div>
+              <!--item 2-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                    What are your sources? How is the data gathered for this project?
+                  </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    We are using state bulletins and official handles to update our numbers. The data is validated by a group of volunteers and 
+                    published into a Google sheet and an API. API is available for all at api.covid19india.org. 
+                    We would love it if you can use this data in the fight against this virus.
+                  </div>
+                </div>
+              </div>
+              <!--item 3-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    Why does covid19india.org have difference in numbers compared to MOHFW website?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    MoHFW updates the data at a scheduled time. However, we update them based on state press bulletins, official 
+                    (CM, Health M) handles, PBI, Press Trust of India, ANI reports. These are generally more recent.
+                  </div>
+                </div>
+              </div>
+              <!--item 4-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                    Where can I find the data for this?
+                  </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    All the data is available through an API for further analysis and development here : <a href="https://data.covid19india.org/" target="_blank">api.covid19india.org</a>
+                  </div>
+                </div>
+              </div>
+              <!--item 5-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                    Who are you?
+                  </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    We are a group of dedicated volunteers who curate and verify the data coming from several sources. We extract the details, like a patient's relationship with 
+                    other patients to identify local and community transmissions, travel history and status. We never collect or expose any personally 
+                    identifiable data regarding the patients.
+                  </div>
+                </div>
+              </div>
+              <!--item 6-->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-six">
+                    Why are you guys putting in time and resources to do this while not gaining a single penny from it?
+                  </button>
+                </h2>
+                <div id="question-six" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Because it affects all of us. Today it's someone else who is getting infected; tomorrow it could be us. We need to 
+                    prevent the spread of this virus. We need to document the data so that people with knowledge can use this data to make informed decisions.
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+    <!--Contact info &Map-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-md p-5">
+                <h2 class="text-center mb-5">
+                  Contact Info
+                </h2>
+                <ul class="list-group list-group-flush lead">
+                  <li class="list-group-item">
+                    <span class="fw-bold">Main Location: </span>GRIET college, NIzampet Road, Hyderabad.
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <span class="fw-bold">College Email Id: </span><a href="#">info@griet.ac.in</a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <span class="fw-bold">AAC Email Id: </span><a href="#">aacgriet.org@gmail.com</a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <span class="fw-bold">AAC contact Number: </span>(+91)-9014534883
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="p-5" id="map">
+      <div class="container">
+        <div class="col-md p-5">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!--Footer-->
+    <footer class="p-5 bg-dark text-white position-relative ">
+      <div class="container">
+       <a href="#" class="navbar-brand text-white">
+           <img src="images/covid logo.png" alt="avatar" class="avatar" width="30" height="30"
+               class="d-inline-block align-text-top">
+           CovINfo
+       </a>
+        
+         <p class="lead fs-6 text-center text-info">Copyright &copy; 2021 COVID19 </p>
+         <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+     </div>
+   </footer>
+
+   <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+   
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+ 
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhbmthcjA4MTAiLCJhIjoiY2tzamF2dzg5MGpudTJ2bDRkbDlyMTZ2byJ9.TuC7e5sNB4TfiyKgHtGPzQ';
+    const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [78.368, 17.5207],
+    zoom: 15
+    });
+     
+    // Create a default Marker and add it to the map.
+    const marker1 = new mapboxgl.Marker()
+    .setLngLat([78.368, 17.5207])
+    .addTo(map);
+    </script>
+
+</body>
+</html>
